@@ -6,16 +6,7 @@ from api import router
 tags_metadata = [
     {
         'name': 'Converter Picklist',
-        # 'description': 'Конвертер',
     },
-#     {
-#         'name': 'operations',
-#         'description': 'Работа с операциями',
-#     },
-#     {
-#         'name': 'reports',
-#         'description': 'Импорт и экспорт отчетов',
-#     },
 ]
 
 app = FastAPI(
@@ -28,7 +19,3 @@ app = FastAPI(
 
 app.include_router(router)
 
-
-# @app.get('/')
-# def root():
-#     return {'message': 'Hello'}
